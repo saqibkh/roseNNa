@@ -12,6 +12,8 @@ name: GPU Simulator
 
 on:
   workflow_dispatch:
+  push:
+    branches: [verify-gpu-sim]
   pull_request:
     paths:
       - "python/rosenna/**"
